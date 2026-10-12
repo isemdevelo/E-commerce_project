@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="View your past orders." />
+  <title>Order History | E-Commerce</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>E-Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html" aria-label="View cart">🛒 (<span id="cart-count">0</span>)</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="orders.html" class="active">Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="orders-section">
+    <h2>Your Order History</h2>
+    <div id="order-history"></div>
+    <p class="orders-footer-link">
+      <a href="index.html">← Continue Shopping</a>
+    </p>
+  </main>
+
+  <footer>
+    <div class="footer-social">
+      <a href="https://github.com/isemdevelo" target="_blank" title="GitHub" rel="noopener"><i class='bx bxl-github'></i></a>
+      <a href="https://linkedin.com/in/isem-deve2927" target="_blank" title="LinkedIn" rel="noopener"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://www.tiktok.com/@isem_dev" target="_blank" title="TikTok" rel="noopener"><i class='bx bxl-tiktok'></i></a>
+      <a href="https://t.me/isem_deve" target="_blank" title="Telegram" rel="noopener"><i class='bx bxl-telegram'></i></a>
+    </div>
+    <p>© 2025 Cloud-Based E-Commerce Prototype | Designed By Meseret Ayana</p>
+  </footer>
+
+  <script src="js/orders.js"></script>
+</body>
+</html>

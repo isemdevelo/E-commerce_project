@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Review and manage the items in your shopping cart." />
+  <title>Your Shopping Cart | E-Commerce</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>E-Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html" class="active" aria-label="View cart">🛒 (<span id="cart-count">0</span>)</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="orders.html">Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="cart-section">
+    <h2>Your Shopping Cart</h2>
+
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-summary">
+      <h3>Subtotal: <span id="cart-subtotal">$0.00</span></h3>
+      <h3>Tax (10%): <span id="cart-tax">$0.00</span></h3>
+      <h3><strong>Total: <span id="cart-total">$0.00</span></strong></h3>
+
+      <div class="cart-buttons">
+        <button type="button" id="clear-cart-btn">Clear Cart</button>
+        <a href="checkout.html" class="btn btn-primary">Checkout</a>
+      </div>
+    </div>
+
+    <p class="cart-footer-link">
+      <a href="index.html">← Continue Shopping</a>
+    </p>
+  </main>
+
+  <footer>
+    <div class="footer-social">
+      <a href="https://github.com/isemdevelo" target="_blank" title="GitHub" rel="noopener"><i class='bx bxl-github'></i></a>
+      <a href="https://linkedin.com/in/isem-deve2927" target="_blank" title="LinkedIn" rel="noopener"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://www.tiktok.com/@isem_dev" target="_blank" title="TikTok" rel="noopener"><i class='bx bxl-tiktok'></i></a>
+      <a href="https://t.me/isem_deve" target="_blank" title="Telegram" rel="noopener"><i class='bx bxl-telegram'></i></a>
+    </div>
+    <p>© 2025 Cloud-Based E-Commerce Prototype | Designed By Meseret Ayana</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

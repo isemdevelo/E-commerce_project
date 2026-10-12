@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cloud-based e-commerce prototype showcasing featured home, apparel, and lifestyle products." />
+  <title>Home | E-Commerce</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>E-Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="cart.html" aria-label="View cart">🛒 (<span id="cart-count">0</span>)</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="orders.html">Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="product-section">
+    <h2>Featured Products</h2>
+
+    <section id="products" class="product-grid">
+
+      <div class="product-card">
+        <img src="images/6-piece-white-dinner-plate-set.jpg" alt="White Dinner Plate Set">
+        <h3>White Dinner Plate Set</h3>
+        <p>$24.99</p>
+        <button onclick="addToCart(1, 'White Dinner Plate Set', 24.99, 'images/6-piece-white-dinner-plate-set.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/athletic-cotton-socks-6-pairs.jpg" alt="Athletic Cotton Socks">
+        <h3>Athletic Cotton Socks</h3>
+        <p>$12.99</p>
+        <button onclick="addToCart(2, 'Athletic Cotton Socks', 12.99, 'images/athletic-cotton-socks-6-pairs.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bathroom-rug.jpg" alt="Bathroom Rug">
+        <h3>Bathroom Rug</h3>
+        <p>$18.50</p>
+        <button onclick="addToCart(3, 'Bathroom Rug', 18.50, 'images/bathroom-rug.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/black-2-slot-toaster.jpg" alt="Black 2-Slot Toaster">
+        <h3>Black 2-Slot Toaster</h3>
+        <p>$29.99</p>
+        <button onclick="addToCart(4, 'Black 2-Slot Toaster', 29.99, 'images/black-2-slot-toaster.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/blackout-curtain-set-beige.webp" alt="Beige Blackout Curtains">
+        <h3>Beige Blackout Curtains</h3>
+        <p>$35.00</p>
+        <button onclick="addToCart(5, 'Beige Blackout Curtains', 35.00, 'images/blackout-curtain-set-beige.webp')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/blackout-curtains-black.jpg" alt="Blackout Curtains Black">
+        <h3>Blackout Curtains</h3>
+        <p>$38.99</p>
+        <button onclick="addToCart(6, 'Blackout Curtains', 38.99, 'images/blackout-curtains-black.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coffeemaker-with-glass-carafe-black.jpg" alt="Coffeemaker">
+        <h3>Coffeemaker</h3>
+        <p>$49.99</p>
+        <button onclick="addToCart(7, 'Coffeemaker', 49.99, 'images/coffeemaker-with-glass-carafe-black.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/intermediate-composite-basketball.jpg" alt="Basketball">
+        <h3>Basketball</h3>
+        <p>$22.99</p>
+        <button onclick="addToCart(8, 'Basketball', 22.99, 'images/intermediate-composite-basketball.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/kitchen-paper-towels-30-pack.jpg" alt="Kitchen Paper Towels">
+        <h3>Kitchen Paper Towels</h3>
+        <p>$25.50</p>
+        <button onclick="addToCart(9, 'Kitchen Paper Towels', 25.50, 'images/kitchen-paper-towels-30-pack.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/knit-athletic-sneakers-gray.jpg" alt="Knit Athletic Sneakers">
+        <h3>Knit Sneakers</h3>
+        <p>$45.00</p>
+        <button onclick="addToCart(10, 'Knit Sneakers', 45.00, 'images/knit-athletic-sneakers-gray.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/men-golf-polo-t-shirt-blue.jpg" alt="Golf Polo T-Shirt">
+        <h3>Golf Polo T-Shirt</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart(11, 'Golf Polo T-Shirt', 19.99, 'images/men-golf-polo-t-shirt-blue.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/men-navigator-sunglasses-brown.jpg" alt="Navigator Sunglasses">
+        <h3>Navigator Sunglasses</h3>
+        <p>$34.99</p>
+        <button onclick="addToCart(12, 'Navigator Sunglasses', 34.99, 'images/men-navigator-sunglasses-brown.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/men-slim-fit-summer-shorts-gray.jpg" alt="Slim Fit Summer Shorts">
+        <h3>Slim Fit Summer Shorts</h3>
+        <p>$22.00</p>
+        <button onclick="addToCart(13, 'Slim Fit Summer Shorts', 22.00, 'images/men-slim-fit-summer-shorts-gray.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/non-stick-cooking-set-15-pieces.webp" alt="Non-Stick Cooking Set">
+        <h3>Non-Stick Cooking Set</h3>
+        <p>$79.99</p>
+        <button onclick="addToCart(14, 'Non-Stick Cooking Set', 79.99, 'images/non-stick-cooking-set-15-pieces.webp')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/plain-hooded-fleece-sweatshirt-yellow.jpg" alt="Hooded Fleece Sweatshirt">
+        <h3>Hooded Fleece Sweatshirt</h3>
+        <p>$28.50</p>
+        <button onclick="addToCart(15, 'Hooded Fleece Sweatshirt', 28.50, 'images/plain-hooded-fleece-sweatshirt-yellow.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/straw-sunhat.webp" alt="Straw Sunhat">
+        <h3>Straw Sunhat</h3>
+        <p>$15.99</p>
+        <button onclick="addToCart(16, 'Straw Sunhat', 15.99, 'images/straw-sunhat.webp')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/umbrella.jpg" alt="Umbrella">
+        <h3>Umbrella</h3>
+        <p>$18.00</p>
+        <button onclick="addToCart(17, 'Umbrella', 18.00, 'images/umbrella.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/women-beach-sandals.jpg" alt="Beach Sandals">
+        <h3>Beach Sandals</h3>
+        <p>$21.99</p>
+        <button onclick="addToCart(18, 'Beach Sandals', 21.99, 'images/women-beach-sandals.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/women-chiffon-beachwear-coverup-black.jpg" alt="Chiffon Beachwear Coverup">
+        <h3>Chiffon Beachwear Coverup</h3>
+        <p>$26.99</p>
+        <button onclick="addToCart(19, 'Chiffon Beachwear Coverup', 26.99, 'images/women-chiffon-beachwear-coverup-black.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/women-french-terry-fleece-jogger-camo.jpg" alt="Fleece Jogger Pants">
+        <h3>Fleece Jogger Pants</h3>
+        <p>$27.99</p>
+        <button onclick="addToCart(20, 'Fleece Jogger Pants', 27.99, 'images/women-french-terry-fleece-jogger-camo.jpg')">Add to Cart</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-social">
+      <a href="https://github.com/isemdevelo" target="_blank" title="GitHub" rel="noopener"><i class='bx bxl-github'></i></a>
+      <a href="https://linkedin.com/in/isem-deve2927" target="_blank" title="LinkedIn" rel="noopener"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://www.tiktok.com/@isem_dev" target="_blank" title="TikTok" rel="noopener"><i class='bx bxl-tiktok'></i></a>
+      <a href="https://t.me/isem_deve" target="_blank" title="Telegram" rel="noopener"><i class='bx bxl-telegram'></i></a>
+    </div>
+    <p>© 2025 Cloud-Based E-Commerce Prototype | Designed By Meseret Ayana</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
